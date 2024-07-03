@@ -27,17 +27,17 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-white p-6 grid grid-cols-3 text-[#130D24] border-b-4">
-      <div className="flex items-center">
-        <Image src={kemendag} width={100} height={100} alt="Kemendag" />
-        <div className="w-px h-12 bg-gray-300 mx-4"></div> {/* Garis vertikal pemisah */}
-        <h1 className="text-3xl">ISO 9001:2015</h1>
+    <nav className="bg-white p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 text-[#130D24] border-b-2 border-blue-950">
+      <div className="flex flex-col md:flex-row items-center">
+        <Image src={kemendag} width={80} height={80} alt="Kemendag" className="mb-2 md:mb-0" />
+        <div className="w-full md:w-px h-0.5 md:h-[120px] bg-blue-950 mx-4"></div>
+        <h1 className="text-2xl md:text-3xl">ISO 9001:2015</h1>
       </div>
-      <div className="flex items-center justify-center">
-        <p className="text-xl">{currentTime}</p>
+      <div className="flex items-center justify-center mt-4 md:mt-0">
+        <p className="text-xl md:text-2xl text-blue-950">{currentTime}</p>
       </div>
-      <div className="flex items-center justify-end">
-        <div className="text-2xl text-left">
+      <div className="flex items-center justify-end mt-4 md:mt-0">
+        <div className="text-lg md:text-2xl text-left">
           <p>SISTEM PENJAMINAN MUTU</p>
           <p>INSPEKTORAT JENDERAL</p>
           <p>KEMENTERIAN PERDAGANGAN</p>
